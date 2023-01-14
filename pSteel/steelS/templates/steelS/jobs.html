@@ -1,17 +1,46 @@
+
+{% load static %}
 <!DOCTYPE html>
 
+<!DOCTYPE html>
 <html>
+  
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Trabajos</title>
+        <title>Nuestro Trabajo</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="{% static 'css/models2.css' %}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     </head>
-    <body>
+    
+    <!--<div class="bg-mask"></div>
+    <script src= "static/js/model2.js"></script>-->
 
-        
-        <script src="" async defer></script>
+        <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #2e2e2e;">
+      
+            <div class="container-fluid">
+              <a class="navbar-brand logo" href="{% url 'index' %}" style="color:#ffffff"><img src="https://cdn-icons-png.flaticon.com/512/74/74958.png" width="30" height="30" >C. Metalicas JRSD</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'about' %}" style="color:#ffffff">Quienes Somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'jobs' %}" style="color:#ffffff">Nuestro Trabajo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="" style="color:#ffffff">Contactanos</a>
+                  </li>
+                </nav>
+                
+    <body style = "background-color:#8b8b8b"> 
+      <h1>Nuestros trabajamos realizados: </h1>
+      <img src="https://i.ibb.co/bmVZMJT/muestra1.jpg" id = "img-1">
     </body>
+
 </html>

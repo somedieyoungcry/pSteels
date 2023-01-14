@@ -1,0 +1,9 @@
+h1 {
+    font-family: Zapf Chancery;
+    text-align: center;
+}
+#img1{
+    width:400px;
+    height: 234px;
+    border-radius: 10px;
+}

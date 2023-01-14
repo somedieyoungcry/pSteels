@@ -1,37 +1,55 @@
+{% load static %}
 <!DOCTYPE html>
-
 <html>
+  
     <head>
+      
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Estructuras JRSD</title>
+        <link rel="stylesheet" href="{% static 'css/model.css' %}">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #e3f2fd;">
+    
+    <!--<div class="bg-mask"></div>
+    <script src= "static/js/model2.js"></script>-->
+        <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #2e2e2e;">
       
             <div class="container-fluid">
-              <a class="navbar-brand logo" href=""><img src="https://cdn-icons-png.flaticon.com/512/74/74958.png" width="30" height="30">Estructuras Metalicas</a>
+              <a class="navbar-brand logo" href="{% url 'index' %}" style="color:#ffffff"><img src="https://cdn-icons-png.flaticon.com/512/74/74958.png" width="30" height="30" >C. Metalicas JRSD</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                  <!--<li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">    Inicio</a>
-                  </li>-->
                   <li class="nav-item">
-                    <a class="nav-link active" href="{% url 'about' %}" >    Quienes Somos</a>
+                    <a class="nav-link active" href="{% url 'about' %}" style="color:#ffffff">Quienes Somos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="{% url 'jobs' %}" >    Nuestro Trabajo</a>
+                    <a class="nav-link active" href="{% url 'jobs' %}" style="color:#ffffff">Nuestro Trabajo</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="" >    Contactanos</a>
+                    <a class="nav-link active" href="" style="color:#ffffff">Contactanos</a>
                   </li>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    </body>
+                </nav>
+        <body style = "background-color:#727272">       
+          <p>
+          <!--<div class="page-header text-center" style = "font-family:'Courier New'">-->
+                <h1 class="display-2" style = "color:#ffffff"; >Construcciones metalicas JRSD</h1>
+                <p class="font-weight-bold" style = "color:#ffffff"; align = center >
+                    Somos una empresa 100% mexicana dedicada a la fabricacion de espacios en donde haya una enorme presencia de acero
+                    y no solo eso, trabajamos los interiores de casa habitacion para asi tener una mejor presentacion de estos. 
+                    Mas de 30 años nos respaldan.
+                </p>
+                <div class="text-center">
+                    <img src="https://static-wc.arcux.net/uploads/20200722150524/estructuras-metalicas-1.png" id = "img1" >
+                </div>
+            <!--<div class="col-lg-10 mx-auto">
+                </div>-->
+            </div>
+          </p>
+        </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>
